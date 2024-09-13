@@ -1,0 +1,20 @@
+# Регистрация пользователя
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "full_name": "Данилов Лев Ильич",
+  "email": "bivekipro@gmail.com",
+  "password": "1234"
+}
+
+###
+
+# Авторизация
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "bivekipro@gmail.com",
+  "password": "1234"
+}
